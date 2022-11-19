@@ -58,6 +58,32 @@
                 return;
             }
         }
+
+        // Cart Item component
+        function CartItem(product) {
+            return (
+                <div className="cart-item">
+                    <img className="cart-item-img" src={product.image} alt=""/>
+                    <div className="cart-item-info">
+                        <h1 className="cart-item-name">{product.name}</h1>
+                        <p className="cart-item-price">{product.price}</p>
+                    </div>
+                    {/*remove button*/}
+                    <i className="remove-btn fa fa-trash" aria-hidden="true" onClick={handleRemove}></i>
+                </div>
+            )
+        }
+        
+        // Cart List component
+        function CartList() {
+            return (
+                <div className="cart-list">
+                    {products.map((product,index) => 
+                        <CartItem key="index" {...product}/>
+                    )}
+                </div>
+            )
+        }
     </script>
 </body>
 
