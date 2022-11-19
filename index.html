@@ -19,6 +19,24 @@
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 
-<body></body>
+<body>
+    <!-- Shopping Cart -->
+    <div class="cart"></div>
+
+    <!-- JSX -->
+    <script type="text/babel">
+        // remove CartItem from CartList
+        function handleRemove(e) {
+            // confirm removal
+            // yes
+            if (confirm("Remove this item?")) {
+                e.target.parentElement.remove();
+            // no
+            } else {
+                return;
+            }
+        }
+    </script>
+</body>
 
 </html>
