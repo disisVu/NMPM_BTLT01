@@ -25,6 +25,28 @@
 
     <!-- JSX -->
     <script type="text/babel">
+        // data
+        const products = [
+            {
+                id: 0,
+                name: "MacBook Air 2020",
+                image: "https://lh3.googleusercontent.com/1hCWMEhDVua6ey6fbzzGQiDYoUhVuQ9ArIEAz6pAGet_ft7FGbw0aePHQrfxGJcGTOGFXFQNALz9AfDKveA=w500-rw",
+                price: "22.850.000đ"
+            },
+            {
+                id: 1,
+                name: "Dell Vostro 15 3510",
+                image: "https://lh3.googleusercontent.com/RGB7zT8K1K3i8nWW1EDhdf9y2i9HIEDR4CBKjSMCVeKeQvSOPgohLUS8Yu9cwUXHXXmwKdj6GKRaotgz1Wu0LAXYHRzhg_2T=w500-rw",
+                price: "22.190.000đ"
+            },
+            {
+                id: 2,
+                name: "Laptop HP ProBook",
+                image: "https://lh3.googleusercontent.com/QT2QTju0ig0ZprlHHYBLEJzlbYWoJaGIHPcBqy8_ep8D_9-yYJAAsztz75MEMTrjGlJHTgYQaen90TYbIuuRROhAL17f4M3e=w500-rw",
+                price: "20.990.000₫"
+            }
+        ]
+
         // remove CartItem from CartList
         function handleRemove(e) {
             // confirm removal
