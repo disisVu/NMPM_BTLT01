@@ -1,0 +1,33 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.cart-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-item-price {
+    font-size: 1.5rem;
+}
+
+.remove-btn {
+    margin: auto;
+    font-size: 5rem;
+}
